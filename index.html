@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Welcome — [Humanitarian Aid Group]</title>
     <link rel="stylesheet" href="screen.css">
   </head>
   <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
+    <div class="preheader">Welcome to [Humanitarian Aid Group] — here's how you can help communities in need.</div>
+
+    <center class="email-container">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="email-shell">
+        <tr>
+          <td class="email-header">
+            <h1 class="hero-title">Welcome to [Humanitarian Aid Group]</h1>
+            <p class="hero-sub">Together we deliver relief, dignity, and hope.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="email-body">
+            <p>Hi {{first_name}},</p>
+
+            <p>
+              Thank you for signing up. Your support helps us provide emergency relief, medical care, and long‑term recovery programs to communities affected by crisis. Below are simple ways to get started and stay involved.
+            </p>
+
+            <h3>How you can help</h3>
+            <ul>
+              <li>Donate — funds provide immediate supplies where they're needed most.</li>
+              <li>Volunteer — join local response teams or remote support roles.</li>
+              <li>Share — amplify stories and fundraising campaigns with your network.</li>
+            </ul>
+
+            <p>
+              Ready to take action? Click the button below to complete your profile and choose how you'd like to help.
+            </p>
+
+            <p class="center">
+              <a class="button" href="https://example.org/complete-profile?uid={{user_id}}" target="_blank" rel="noopener noreferrer">Complete Your Profile</a>
+            </p>
+
+            <hr class="divider">
+
+            <p class="muted">
+              If you have questions, reply to this email or contact us at <a href="mailto:contact@example.org">contact@example.org</a>.
+            </p>
+
+            <p class="muted">
+              Thank you,<br>[Humanitarian Aid Group] Team
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="email-footer">
+            <p class="small">[Humanitarian Aid Group] · 123 Relief Ave · City, Country</p>
+            <p class="small">
+              <a href="https://example.org/unsubscribe?uid={{user_id}}">Unsubscribe</a> · <a href="https://example.org/privacy">Privacy policy</a>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </center>
   </body>
 </html>
